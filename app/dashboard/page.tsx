@@ -12,13 +12,13 @@ import {
   GraduationCap, BookMarked, Trophy, Flame,
   BookOpen, TrendingUp, Award, Settings
 } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
-import { Avatar } from '@/components/ui/Avatar';
-import { TeacherCard } from '@/components/ui/TeacherCard';
-import { StatCard } from '@/components/ui/StatCard';
-import { ProgressBar } from '@/components/ui/ProgressBar';
-import { SearchField } from '@/components/ui/SearchField';
-import FadeIn from '@/components/animations/FadeIn';
+import { Button } from '../../components/ui/Button';
+import { Avatar } from '../../components/ui/Avatar';
+import { TeacherCard } from '../../components/ui/TeacherCard';
+import { StatCard } from '../../components/ui/StatCard';
+import { ProgressBar } from '../../components/ui/ProgressBar';
+import { SearchField } from '../../components/ui/SearchField';
+import FadeIn from '../../components/animations/FadeIn';
 
 export default function DashboardPage() {
   const [user, setUser] = useState<any>(null);

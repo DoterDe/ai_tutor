@@ -8,13 +8,12 @@ import {
   ChevronRight, Star, Users, Clock, BookOpen,
   MessageCircle, Award, TrendingUp, CheckCircle
 } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
-import { ChatMessage } from '@/components/ui/ChatMessage';
-import { TeacherCard } from '@/components/ui/TeacherCard';
-import { StatCard } from '@/components/ui/StatCard';
-import FadeIn from '@/components/animations/FadeIn';
-import TextReveal from '@/components/animations/TextReveal';
-
+import { Button } from '../components/ui/Button';
+import { ChatMessage } from '../components/ui/ChatMessage';
+import { TeacherCard } from '../components/ui/TeacherCard';
+import { StatCard } from '../components/ui/StatCard';
+import FadeIn from '../components/animations/FadeIn';
+import TextReveal from '../components/animations/TextReveal';
 // Данные для отображения
 const teachers = [
   {
