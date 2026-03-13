@@ -4,8 +4,8 @@ import { useState, useEffect, useRef } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { teachers } from '@/lib/teachers';
-import { supabase } from '@/lib/supabase';
+import { teachers } from '../../../lib/teachers';
+import { supabase } from '../../../lib/supabase';
 import { 
   Send, ArrowLeft, MoreVertical, Mic, Image,
   Paperclip, Smile, Info, Check, Clock, Star,

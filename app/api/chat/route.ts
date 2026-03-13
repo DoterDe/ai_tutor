@@ -88,7 +88,7 @@
 
 import { google } from '@ai-sdk/google';
 import { generateText } from 'ai';
-import { teachers } from '@/lib/teachers';
+import { teachers } from '../../../lib/teachers';
 
 export const maxDuration = 30;
 

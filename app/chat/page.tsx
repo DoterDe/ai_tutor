@@ -3,8 +3,8 @@
 import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { teachers } from '@/lib/teachers';
-import { supabase } from '@/lib/supabase';
+import { teachers } from '../../lib/teachers';
+import { supabase } from '../../lib/supabase';
 
 interface Message {
   id: string;
