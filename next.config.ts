@@ -1,21 +1,19 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  // Отключаем проверку типов при сборке
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  // Отключаем линтинг при сборке
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  // Разрешаем изображения из Supabase
+import type { NextConfig } from 'next'
+
+const nextConfig: NextConfig = {
+  // Правильная настройка для изображений (замена устаревшего domains)
   images: {
-    domains: ['lhysguzndraiqvrffixl.supabase.co'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'lhysguzndraiqvrffixl.supabase.co',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
-  // Настройка статической генерации
-  output: 'standalone',
-  // Убираем экспериментальные функции
-  experimental: {},
+  // Другие настройки можно добавить здесь
+  // (удаляем устаревший блок eslint)
 }
 
-module.exports = nextConfig
+export default nextConfig
